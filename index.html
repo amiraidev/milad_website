@@ -1,0 +1,241 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>میلاد | دوبلور حرفه‌ای</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700;900&family=Vazirmatn:wght@300;400;600;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===== Custom Cursor ===== -->
+  <div class="cursor-dot"></div>
+  <div class="cursor-ring"></div>
+
+  <!-- ===== Particle Background ===== -->
+  <canvas id="embers"></canvas>
+
+  <!-- ===== Loader ===== -->
+  <div class="loader" id="loader">
+    <div class="loader-sigil">
+      <span class="loader-text">MILAD</span>
+    </div>
+  </div>
+
+  <!-- ===== Navbar ===== -->
+  <header class="navbar" id="navbar">
+    <a href="#hero" class="logo">
+      <span class="logo-mark">M</span>
+      <span class="logo-text">MILAD<small>VOICE</small></span>
+    </a>
+    <nav class="nav-links" id="navLinks">
+      <a href="#about" class="nav-item">درباره</a>
+      <a href="#skills" class="nav-item">مهارت‌ها</a>
+      <a href="#works" class="nav-item">نمونه کارها</a>
+      <a href="#stats" class="nav-item">آمار</a>
+      <a href="#contact" class="nav-item cta">تماس</a>
+    </nav>
+    <button class="burger" id="burger" aria-label="منو">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <!-- ===== Hero ===== -->
+  <section class="hero" id="hero">
+    <div class="hero-glow"></div>
+    <div class="hero-content">
+      <p class="hero-pre reveal">صدای پشت شخصیت‌ها</p>
+      <h1 class="hero-title">
+        <span class="line reveal">میلاد</span>
+        <span class="line accent reveal">دوبلور حرفه‌ای</span>
+      </h1>
+      <p class="hero-sub reveal">
+        خالق صداهایی که در ذهن می‌مانند. از فریادهای خشمگین قهرمانان
+        تا زمزمه‌های آرام راوی‌ها — هر کلمه با احساس، هر جمله با هنر.
+      </p>
+      <div class="hero-actions reveal">
+        <a href="#works" class="btn btn-primary">شنیدن نمونه‌ها</a>
+        <a href="#contact" class="btn btn-ghost">همکاری با من</a>
+      </div>
+    </div>
+    <div class="scroll-hint">
+      <span>اسکرول کنید</span>
+      <div class="mouse"></div>
+    </div>
+  </section>
+
+  <!-- ===== About ===== -->
+  <section class="about" id="about">
+    <div class="section-head">
+      <span class="section-index">۰۱</span>
+      <h2 class="section-title">درباره میلاد</h2>
+    </div>
+    <div class="about-grid">
+      <div class="about-portrait reveal">
+        <div class="portrait-frame">
+          <div class="portrait-inner">
+            <span class="portrait-initial">M</span>
+          </div>
+          <div class="frame-corner tl"></div>
+          <div class="frame-corner tr"></div>
+          <div class="frame-corner bl"></div>
+          <div class="frame-corner br"></div>
+        </div>
+      </div>
+      <div class="about-text">
+        <p class="reveal">
+          میلاد یک <strong>دوبلور و صداپیشه حرفه‌ای</strong> با بیش از ده سال
+          تجربه در عرصه دوبلاژ فیلم، انیمیشن، بازی‌های ویدیویی و تبلیغات است.
+          صدای او ترکیبی از قدرت، عمق و احساس است که می‌تواند هر شخصیتی را
+          زنده کند.
+        </p>
+        <p class="reveal">
+          او با الهام از سبک‌های اکشن و دراماتیک، توانایی منحصربه‌فردی در
+          اجرای نقش‌های پرتنش، قهرمانانه و حماسی دارد. هر پروژه برای میلاد
+          یک نبرد هنری است که با دقت و وسواس به آن می‌پردازد.
+        </p>
+        <ul class="about-tags reveal">
+          <li>دوبلاژ فیلم</li>
+          <li>صداپیشگی بازی</li>
+          <li>راوی مستند</li>
+          <li>تیزر تبلیغاتی</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Skills ===== -->
+  <section class="skills" id="skills">
+    <div class="section-head">
+      <span class="section-index">۰۲</span>
+      <h2 class="section-title">مهارت‌ها</h2>
+    </div>
+    <div class="skills-grid">
+      <div class="skill" data-skill="95">
+        <div class="skill-top"><span>اجرای دراماتیک</span><span class="skill-val">۹۵٪</span></div>
+        <div class="skill-bar"><span></span></div>
+      </div>
+      <div class="skill" data-skill="90">
+        <div class="skill-top"><span>صداپیشگی شخصیت</span><span class="skill-val">۹۰٪</span></div>
+        <div class="skill-bar"><span></span></div>
+      </div>
+      <div class="skill" data-skill="88">
+        <div class="skill-top"><span>روایت و نریشن</span><span class="skill-val">۸۸٪</span></div>
+        <div class="skill-bar"><span></span></div>
+      </div>
+      <div class="skill" data-skill="92">
+        <div class="skill-top"><span>کنترل لحن و احساس</span><span class="skill-val">۹۲٪</span></div>
+        <div class="skill-bar"><span></span></div>
+      </div>
+      <div class="skill" data-skill="85">
+        <div class="skill-top"><span>میکس و ضبط استودیویی</span><span class="skill-val">۸۵٪</span></div>
+        <div class="skill-bar"><span></span></div>
+      </div>
+      <div class="skill" data-skill="80">
+        <div class="skill-top"><span>سینک با لب (Lip Sync)</span><span class="skill-val">۸۰٪</span></div>
+        <div class="skill-bar"><span></span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Works ===== -->
+  <section class="works" id="works">
+    <div class="section-head">
+      <span class="section-index">۰۳</span>
+      <h2 class="section-title">نمونه کارها</h2>
+    </div>
+    <div class="works-grid">
+      <article class="work-card reveal">
+        <div class="work-icon">🎬</div>
+        <h3>دوبله فیلم اکشن</h3>
+        <p>صداپیشگی نقش اصلی در فیلم‌های اکشن و حماسی با لحنی قدرتمند.</p>
+        <button class="work-play">▶ پخش نمونه</button>
+      </article>
+      <article class="work-card reveal">
+        <div class="work-icon">🎮</div>
+        <h3>صداپیشگی بازی</h3>
+        <p>اجرای شخصیت‌های شیطانی و قهرمانان تاریک با عمق احساسی.</p>
+        <button class="work-play">▶ پخش نمونه</button>
+      </article>
+      <article class="work-card reveal">
+        <div class="work-icon">🎭</div>
+        <h3>دوبله انیمیشن</h3>
+        <p>زنده کردن شخصیت‌های متنوع با خلاقیت و انرژی بالا.</p>
+        <button class="work-play">▶ پخش نمونه</button>
+      </article>
+      <article class="work-card reveal">
+        <div class="work-icon">📺</div>
+        <h3>تیزر تبلیغاتی</h3>
+        <p>روایت گیرا و حرفه‌ای برای برندها و کمپین‌های تبلیغاتی.</p>
+        <button class="work-play">▶ پخش نمونه</button>
+      </article>
+      <article class="work-card reveal">
+        <div class="work-icon">🎙️</div>
+        <h3>راوی مستند</h3>
+        <p>نریشن آرام و عمیق برای مستندهای تاریخی و علمی.</p>
+        <button class="work-play">▶ پخش نمونه</button>
+      </article>
+      <article class="work-card reveal">
+        <div class="work-icon">🔥</div>
+        <h3>پروژه‌های ویژه</h3>
+        <p>همکاری در پروژه‌های خاص با چالش‌های صوتی منحصربه‌فرد.</p>
+        <button class="work-play">▶ پخش نمونه</button>
+      </article>
+    </div>
+  </section>
+
+  <!-- ===== Stats ===== -->
+  <section class="stats" id="stats">
+    <div class="stats-grid">
+      <div class="stat reveal"><span class="stat-num" data-target="450">0</span><span class="stat-label">پروژه تکمیل‌شده</span></div>
+      <div class="stat reveal"><span class="stat-num" data-target="12">0</span><span class="stat-label">سال تجربه</span></div>
+      <div class="stat reveal"><span class="stat-num" data-target="120">0</span><span class="stat-label">شخصیت دوبله‌شده</span></div>
+      <div class="stat reveal"><span class="stat-num" data-target="98">0</span><span class="stat-label">درصد رضایت</span></div>
+    </div>
+  </section>
+
+  <!-- ===== Contact ===== -->
+  <section class="contact" id="contact">
+    <div class="section-head center">
+      <span class="section-index">۰۴</span>
+      <h2 class="section-title">بیا کار کنیم</h2>
+    </div>
+    <p class="contact-lead reveal">
+      پروژه‌ای در ذهن داری؟ بیا با هم یک اثر ماندگار بسازیم.
+    </p>
+    <form class="contact-form reveal" id="contactForm">
+      <div class="field">
+        <input type="text" id="name" required placeholder=" " />
+        <label for="name">نام شما</label>
+      </div>
+      <div class="field">
+        <input type="email" id="email" required placeholder=" " />
+        <label for="email">ایمیل</label>
+      </div>
+      <div class="field full">
+        <textarea id="msg" rows="4" required placeholder=" "></textarea>
+        <label for="msg">پیام شما</label>
+      </div>
+      <button type="submit" class="btn btn-primary full">ارسال پیام</button>
+      <p class="form-status" id="formStatus"></p>
+    </form>
+  </section>
+
+  <!-- ===== Footer ===== -->
+  <footer class="footer">
+    <div class="footer-logo">MILAD<small>VOICE</small></div>
+    <div class="socials">
+      <a href="#" aria-label="instagram">IG</a>
+      <a href="#" aria-label="telegram">TG</a>
+      <a href="#" aria-label="youtube">YT</a>
+    </div>
+    <p class="copyright">© ۲۰۲۶ میلاد — تمام حقوق محفوظ است.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
